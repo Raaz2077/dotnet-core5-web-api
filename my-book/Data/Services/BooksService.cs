@@ -16,7 +16,7 @@ namespace my_book.Data.Services
             _context = context;
         }
 
-        public void AddBook(BookVM book) 
+        public void AddBook(BookVM book)
         {
             var _book = new Book()
             {
@@ -24,7 +24,7 @@ namespace my_book.Data.Services
                 Description = book.Description,
                 IsRead = book.IsRead,
                 DateRead = book.IsRead ? book.DateRead.Value : null,
-                Rate = book.IsRead ? book.Rate.Value :null,
+                Rate = book.IsRead ? book.Rate.Value : null,
                 Genre = book.Genre,
                 Author = book.Author,
                 CoverUrl = book.CoverUrl,
@@ -33,5 +33,14 @@ namespace my_book.Data.Services
             _context.Books.Add(_book);
             _context.SaveChanges();
         }
+
+        //public List<Book> GetAllBooks()
+        //{
+        //    var allBooks = _context.Books.ToList();
+        //    return allBooks;
+        //}
+
+        // or
+        public List<Book> GetAllBooks() => _context.Books.ToList();
     }
 }
