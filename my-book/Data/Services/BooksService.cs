@@ -42,5 +42,7 @@ namespace my_book.Data.Services
 
         // or
         public List<Book> GetAllBooks() => _context.Books.ToList();
+
+        public Book GetBookById(int bookId) => _context.Books.FirstOrDefault(n => n.Id == bookId);
     }
 }
