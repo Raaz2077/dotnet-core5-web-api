@@ -57,3 +57,4 @@ C:\Users\RK\source\repos\my-book\my-book\obj\Debug\net5.0\my-book.dll
 C:\Users\RK\source\repos\my-book\my-book\obj\Debug\net5.0\ref\my-book.dll
 C:\Users\RK\source\repos\my-book\my-book\obj\Debug\net5.0\my-book.pdb
 C:\Users\RK\source\repos\my-book\my-book\obj\Debug\net5.0\my-book.genruntimeconfig.cache
+C:\Users\RK\source\repos\my-book\my-book\obj\Debug\net5.0\my-book.csproj.AssemblyReference.cache
